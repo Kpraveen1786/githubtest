@@ -14,8 +14,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -37,17 +37,17 @@ public class Test_Data {
 	@BeforeTest()
 	public void Excel_Data() throws Exception {
 		try {
-			WebDriverManager.firefoxdriver().setup();
-			FirefoxOptions firefoxoptions = new FirefoxOptions();
-			firefoxoptions.setPageLoadStrategy(PageLoadStrategy.NONE);
+			// WebDriverManager.firefoxdriver().setup();
+			// FirefoxOptions firefoxoptions = new FirefoxOptions();
+			// firefoxoptions.setPageLoadStrategy(PageLoadStrategy.NONE);
 			// firefoxoptions.addArguments("headless");
-			browser = new FirefoxDriver(firefoxoptions);
+			// browser = new FirefoxDriver(firefoxoptions);
 			System.out.println("Excel_data()");
-			// WebDriverManager.chromedriver().setup();
-			// ChromeOptions options = new ChromeOptions();
-			// options.setPageLoadStrategy(PageLoadStrategy.NONE);
-			// options.addArguments("headless");
-			// browser = new ChromeDriver(options);
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.setPageLoadStrategy(PageLoadStrategy.NONE);
+			options.addArguments("headless");
+			browser = new ChromeDriver(options);
 			browser.manage().window().maximize();
 			browser.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			browser.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
