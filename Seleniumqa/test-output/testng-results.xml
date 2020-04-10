@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="45887" started-at="2020-04-09T10:27:22Z" finished-at="2020-04-09T10:28:08Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="45887" started-at="2020-04-09T10:27:22Z" finished-at="2020-04-09T10:28:08Z">
+      <class name="com.forsys.duma.Test_Data">
+        <test-method status="PASS" signature="Excel_Data()[pri:0, instance:com.forsys.duma.Test_Data@50cbc42f]" name="Excel_Data" is-config="true" duration-ms="41239" started-at="2020-04-09T10:27:22Z" finished-at="2020-04-09T10:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Excel_Data -->
+        <test-method status="PASS" signature="insertInExcelSheet()[pri:0, instance:com.forsys.duma.Test_Data@50cbc42f]" name="insertInExcelSheet" duration-ms="4614" started-at="2020-04-09T10:28:03Z" finished-at="2020-04-09T10:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertInExcelSheet -->
+        <test-method status="PASS" signature="Quit_Browser()[pri:0, instance:com.forsys.duma.Test_Data@50cbc42f]" name="Quit_Browser" is-config="true" duration-ms="0" started-at="2020-04-09T10:28:08Z" finished-at="2020-04-09T10:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit_Browser -->
+      </class> <!-- com.forsys.duma.Test_Data -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
