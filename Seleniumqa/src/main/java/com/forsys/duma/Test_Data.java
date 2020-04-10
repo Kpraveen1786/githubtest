@@ -42,6 +42,7 @@ public class Test_Data {
 			firefoxoptions.setPageLoadStrategy(PageLoadStrategy.NONE);
 			// firefoxoptions.addArguments("headless");
 			browser = new FirefoxDriver(firefoxoptions);
+			System.out.println("Excel_data()");
 			// WebDriverManager.chromedriver().setup();
 			// ChromeOptions options = new ChromeOptions();
 			// options.setPageLoadStrategy(PageLoadStrategy.NONE);
